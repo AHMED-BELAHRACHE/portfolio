@@ -1,59 +1,69 @@
+/* Style général */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #f4f4f9;
     color: #333;
 }
 
+/* En-tête */
 header {
-    text-align: center;
-    background: #0056b3;
+    background: url('background.jpg') no-repeat center center/cover;
+    height: 100vh;
     color: white;
-    padding: 20px 0;
+    text-align: center;
+    padding: 50px 0;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
-}
-
-header span {
-    color: #FFD700;
-}
-
-nav ul {
+header nav ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
 }
 
-nav ul li {
-    display: inline;
+header nav ul li {
     margin: 0 15px;
 }
 
-nav ul li a {
+header nav ul li a {
     color: white;
     text-decoration: none;
 }
 
+.hero h1 span {
+    color: #FFD700;
+}
+
+/* Sections */
 section {
+    padding: 50px 20px;
+}
+
+section#cv .cv-grid,
+section#projects .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project-grid div, .cv-grid div {
+    background: #f4f4f9;
     padding: 20px;
-    margin: 20px;
-    background: white;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.project {
-    margin-bottom: 15px;
+/* Formulaire de contact */
+form {
+    display: flex;
+    flex-direction: column;
 }
 
-footer {
-    text-align: center;
-    padding: 10px 0;
-    background: #0056b3;
-    color: white;
-    margin-top: 20px;
+form input, form button {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
