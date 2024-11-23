@@ -1,12 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portfolio</title>
+    <title>Portfolio - Ayoub Hsaine</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Bienvenue sur mon portfolio</h1>
-    <p>Ceci est un projet simple pour présenter mes travaux et mes compétences.</p>
+    <header>
+        <h1>Bienvenue, je suis <span>Ayoub Hsaine</span></h1>
+        <p>Et voici mon portfolio</p>
+        <nav>
+            <ul>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>À propos de moi</h2>
+        <p>Je suis un ingénieur passionné par la robotique et l'IA. Avec une solide expérience dans le domaine, j'ai travaillé sur plusieurs projets innovants et participé à de nombreux concours nationaux et internationaux.</p>
+    </section>
+
+    <section id="education">
+        <h2>Éducation</h2>
+        <ul>
+            <li><strong>Ingénieur en robotique et cobotique</strong> - Université Euromed de Fès (2019 - 2024)</li>
+            <li><strong>Certificat</strong> - Université du Zhejiang (2022)</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Mes projets</h2>
+        <div class="project">
+            <h3>Étude comparative : Algorithmes DFS, BFS et A*</h3>
+            <p>Analyse des performances de ces algorithmes pour la planification de chemin.</p>
+        </div>
+        <div class="project">
+            <h3>PepperChat</h3>
+            <p>Intégration de ChatGPT avec le robot Pepper pour des conversations intelligentes.</p>
+        </div>
+        <!-- Ajoutez plus de projets ici -->
+    </section>
+
+    <section id="skills">
+        <h2>Compétences</h2>
+        <ul>
+            <li>Python, C/C++, MATLAB</li>
+            <li>Conception de systèmes robotiques</li>
+            <li>Vision par ordinateur</li>
+            <li>Développement web</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contactez-moi</h2>
+        <form>
+            <label for="name">Nom</label>
+            <input type="text" id="name" placeholder="Votre nom">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Votre email">
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Votre message"></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+        <p>Email : ayoub.hsaine2001@gmail.com</p>
+        <p>Téléphone : +212 (633) 945-698</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Tous droits réservés | Réalisé par Ayoub Hsaine</p>
+    </footer>
 </body>
 </html>
